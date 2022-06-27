@@ -276,7 +276,8 @@ footer a {
     }
 
     main {
-        height: 80vh;
+        height: auto;
+        min-height: 80vh;
     }
 
     #openingInfo {
@@ -370,13 +371,24 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
+    #openingInfo {
+        width: 80%;
+        margin: auto;
+    }
 
-    #infoSectionOne,
     #partners {
-        padding: 50px;
+        padding-left: 5%;
+        margin-top: -2%;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    #infoSectionOne {
+        width: 40%;
     }
 
     #partners {
         margin-top: -5%;
+        padding-left: 9%;
     }
 }
