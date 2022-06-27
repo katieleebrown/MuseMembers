@@ -15,22 +15,107 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Source+Sans+Pro:wght@400;600&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Voltaire&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/8745b435ef.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <!-- Header for Mobile Views -->
+        <section id="mobileHeader">
+            <img src="/images/MuseMembersFullLogoBlack.png"
+                alt="MuseMembers Logo, bold text with a museum bust illustration">
+            <section class="buttonHolder">
+                <button id="loginButton" class="whiteDecorButton button voltaire">Login</button>
+                <button id="registerButton" class="whiteDecorButton button voltaire">Register</button>
+            </section>
+        </section>
 
+        <!-- Header for desktop views, hidden by default -->
+        <section id="desktopHeader" class="hidden">
+            <section id="headerLeft">
+                <img src="/images/MuseMembersFullLogoBlack.png"
+                    alt="MuseMembers Logo, bold text with a museum bust illustration">
+                <nav>
+                    <a href="/features.html">Features</a>
+                    <a href="/museums.html">For Museums</a>
+                    <a href="/about.html">About Us</a>
+                </nav>
+            </section>
+
+            <section id="headerRight">
+                <button id="loginButton" class="noDecorButton button voltaire">Login</button>
+                <button id="registerButton" class="whiteDecorButton button voltaire">Register</button>
+            </section>
+        </section>
     </header>
 
     <main>
+        <section id="openingInfo">
+            <section id="infoSectionOne">
+                <h1>Your museum memberships, at your fingertips</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Facilisi morbi tempus iaculis urna id volutpat. Sit amet consectetur
+                    adipiscing elit ut aliquam purus sit amet. Elementum nisi quis eleifend quam adipiscing. Convallis
+                    aenean et tortor at risus viverra adipiscing at.</p>
+                <button id="learnMoreButton" class="pinkDecorButton button voltaire">Learn More</button>
+            </section>
+
+            <section id="infoSectionImage">
+                <img src="/images/womanAndArt.svg" alt="a woman standing in front of a large abstract work of art">
+            </section>
+        </section>
+
+        <section id="partners">
+            <h3>Our Partners</h3>
+            <section id="partnerLogos">
+                <img src="/images/Cary Children's Museum.png" alt="logo for Cary Children's Museum">
+                <img src="/images/City of Oaks Historical Center.png" alt="logo for City of Oaks Historical Center">
+                <img src="/images/Museum of Climate Sciences.png" alt="logo for the Museum of Climate Sciences">
+                <img src="/images/North Carolina Farm Park.png" alt="logo for NC Farm Park & Zoo">
+            </section>
+        </section>
 
     </main>
 
     <footer>
+        <!-- Footer for mobile views -->
+        <nav id="mobileFooter">
+            <a href="/features.html">Features</a>
+            <a href="/museums.html">For Museums</a>
+            <a href="/about.html">About Us</a>
+        </nav>
 
+        <!-- Footer for desktop view, hidden by default -->
+        <section id="desktopFooter" class="hidden">
+            <img src="/images/BlackArtLogoMini.png">
+            <section class="footerLinks">
+                <section class="footerColumn">
+                    <h5>MuseMembers</h5>
+                    <a href="/features.html">Features</a>
+                    <a href="/about.html">About Us</a>
+                </section>
+
+                <section class="footerColumn">
+                    <h5>For Museums</h5>
+                    <a href="#">Interested in Joining</a>
+                    <a href="#">Current Institutions</a>
+                </section>
+
+                <section class="footerColumn">
+                    <h5>For Members</h5>
+                    <a href="#">Contact MuseMembers</a>
+                    <a href="#">Contact Your Institution</a>
+                </section>
+            </section>
+
+            <section id="mediaLinks">
+                <a href="https://github.com/katieleebrown/MuseMembers"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:katieleebrown19@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </section>
+        </section>
     </footer>
 
     <!-- JS Files -->

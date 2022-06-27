@@ -1,0 +1,378 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+    width: 100%;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.voltaire {
+    font-family: 'Voltaire', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    width: 125px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .25)
+}
+
+.whiteDecorButton {
+    background-color: white;
+}
+
+.whiteDecorButton:hover {
+    background-color: rgba(0, 0, 0, .25);
+    border: 2px solid black;
+}
+
+.noDecorButton {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.pinkDecorButton {
+    background-color: #EC755D;
+}
+
+.pinkDecorButton:hover {
+    background-color: #ee5b3e;
+    border: 2px solid black;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* Header */
+header {
+    width: 100%;
+    margin: auto;
+}
+
+/* Mobile Header Styles */
+#mobileHeader {
+    width: 100%;
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobileHeader>img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+.buttonHolder {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+/* Desktop Header Styles */
+#desktopHeader {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+#headerLeft {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#headerLeft>img {
+    width: 30%;
+    height: auto;
+    max-width: 400px;
+}
+
+#headerLeft>nav {
+    min-width: 300px;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#headerLeft a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin: 2%;
+}
+
+#headerLeft a:hover {
+    font-weight: bold;
+}
+
+#headerRight {
+    display: flex;
+
+}
+
+/* Main Section - Opening Info */
+#openingInfo,
+#partners {
+    width: 90%;
+}
+
+#openingInfo,
+#infoSectionOne,
+#partners {
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#infoSectionImage>img {
+    width: 100%;
+    padding: 10%;
+}
+
+/* Main Section - Partners */
+#partners {
+    margin-bottom: 5%;
+}
+
+#partners>h3 {
+    font-size: 2em;
+}
+
+#partnerLogos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#partnerLogos>img {
+    width: 20%;
+    height: auto;
+}
+
+/* #partnerLogos>img:hover {
+    width: 24%;
+} */
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #EC755D;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* Mobile Footer */
+#mobileFooter {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Desktop Footer */
+#desktopFooter {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#desktopFooter>img {
+    max-height: 80px;
+    width: auto;
+    margin-left: 2%;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    min-width: 600px;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    min-width: 150px;
+}
+
+.footerColumn h5 {
+    padding: 3% 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+#mediaLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    font-size: 1.5em;
+}
+
+/******************************************
+/* MEDIA STYLES
+/*******************************************/
+@media screen and (min-width: 500px) {
+    .button {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .button {
+        width: 175px;
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #mobileHeader {
+        display: none;
+    }
+
+    #desktopHeader {
+        display: flex;
+    }
+
+    main {
+        height: 80vh;
+    }
+
+    #openingInfo {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    #infoSectionOne,
+    #infoSectionImage {
+        width: 50%;
+
+    }
+
+    #infoSectionOne {
+        align-items: flex-start;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 2.75em;
+    }
+
+    #infoSectionOne p {
+        margin: 8% auto;
+    }
+
+    #infoSectionImage>img {
+        padding: 2%;
+    }
+
+    #partners {
+        width: 50%;
+        align-items: flex-start;
+        margin: 2%;
+    }
+
+    #partners h3 {
+        padding: 2%;
+        margin-left: 3%;
+    }
+
+    footer {
+        height: auto;
+        min-height: 100px;
+        margin-bottom: -1px;
+    }
+
+    #mobileFooter {
+        display: none;
+    }
+
+    #desktopFooter {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    #headerLeft>nav {
+        min-width: 400px;
+    }
+
+    main {
+        height: auto;
+    }
+
+    #openingInfo {
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #infoSectionImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #infoSectionImage>img {
+        padding: 10%;
+        max-width: 575px;
+    }
+
+    #partners {
+        width: 40%;
+        margin: 1% 3%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #infoSectionOne,
+    #partners {
+        padding: 50px;
+    }
+
+    #partners {
+        margin-top: -5%;
+    }
+}
