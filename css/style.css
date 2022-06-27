@@ -47,6 +47,10 @@ h5,
     box-shadow: none;
 }
 
+.noDecorButton:hover {
+    font-size: larger;
+}
+
 .pinkDecorButton {
     background-color: #EC755D;
 }
