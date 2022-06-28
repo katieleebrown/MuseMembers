@@ -31,6 +31,47 @@ h3 {
     margin: auto;
 }
 
+/* Museum Columns Section */
+.threeColumns {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column h3 {
+    text-align: center;
+}
+
+#signUpButton {
+    margin-bottom: 5%;
+}
+
+/* About Us */
+#contactUs>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+#contactUs button {
+    margin: 5% auto;
+
+}
+
 /******************************************
 /* MEDIA STYLES
 /*******************************************/
@@ -54,6 +95,20 @@ h3 {
     .featureImage,
     .featureText {
         width: 40%;
+    }
+
+    .threeColumns {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .column {
+        width: 30%;
+    }
+
+    .column h3 {
+        text-align: left;
     }
 }
 
