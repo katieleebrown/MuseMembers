@@ -1,0 +1,100 @@
+/******************************************
+/* LAYOUT
+/*******************************************/
+main {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.featureImage,
+.featureText {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+/******************************************
+/* MEDIA STYLES
+/*******************************************/
+@media screen and (min-width: 800px) {
+    main {
+        width: 90%;
+    }
+
+    .reverseRow {
+        flex-direction: row-reverse;
+    }
+
+    .standardRow {
+        flex-direction: row;
+    }
+
+    .feature {
+        justify-content: space-between;
+    }
+
+    .featureImage,
+    .featureText {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        width: 85%;
+    }
+
+    .feature {
+        padding-bottom: 8%;
+    }
+
+    .featureImage {
+        width: 40%;
+        max-height: 450px;
+    }
+
+    .featureText {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        width: 80%;
+        padding-bottom: 3%;
+    }
+
+    .feature {
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .feature {
+        padding-bottom: 3%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .feature {
+        padding: 0%;
+    }
+}
