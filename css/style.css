@@ -80,10 +80,17 @@ header {
     align-items: center;
 }
 
-#mobileHeader>img {
+#mobileHeader>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobileHeader img {
     width: 80%;
     max-width: 400px;
     height: auto;
+    margin: auto;
 }
 
 .buttonHolder {
@@ -106,10 +113,16 @@ header {
     align-items: center;
 }
 
-#headerLeft>img {
-    width: 30%;
+#headerLeft>a {
+    width: 40%;
     height: auto;
     max-width: 400px;
+}
+
+#headerLeft img {
+    width: 100%;
+    height: auto;
+    max-width: 175px;
 }
 
 #headerLeft>nav {
@@ -371,6 +384,10 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
+    #headerLeft img {
+        max-width: 200px;
+    }
+
     #openingInfo {
         width: 80%;
         margin: auto;
